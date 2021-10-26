@@ -3,7 +3,7 @@ import { StyleSheet, Text, View } from 'react-native'
 
 const styles = StyleSheet.create({
     item: {
-        width: 335,
+        //width: 335,
         height: 53,
         backgroundColor: '#FFFFFF',
         borderRadius: 10,

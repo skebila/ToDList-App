@@ -2,6 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import Task from './components/Task/index.js';
+import TaskInput from './components/TaskInput/index.js';
 
 export default function App() {
   return (
@@ -11,11 +12,12 @@ export default function App() {
         
         <View style={styles.items}>
           <Task text={"taks 1"} />
-          <Task text={ "taks 2" }/>
+          <Task text={ "taks 2"}/>
         </View>
-        
+
       </View>
 
+        <TaskInput />
 
       <StatusBar style="auto" />
     </View>
@@ -25,7 +27,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#E8EDED',
+    backgroundColor: '#F9F9F9',
   },
   taskContainer: {
     paddingTop: 80,
